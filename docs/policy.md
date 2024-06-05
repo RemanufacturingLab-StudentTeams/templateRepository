@@ -9,11 +9,11 @@ There is a README.md file at the project level, which contains general architect
 
 ### Components
 
-The project, at the time of writing, consists of several mostly heterogenous software components (such as the AAS server/registry and Data Bridge, the Node-RED/NodeJS program on the Raspberry Pi, the Turtlebot, and the PLC codebase). They are kept in separate directories at the project level. 
+The project, at the time of writing, consists of several mostly heterogenous software components. They are kept in separate directories at the project level. 
 
 The components have different requirements to run, and some have hardware requirements that make them impossible to test locally. They will mostly be developed independently, and have separate README files and documentation.
 
-It is important to note that even code that cannot be ran/tested locally because of hardware requirements or are not even human-readable without interpreter software (Tia Portal v17 for PLC code, NodeRED for the flows) should *still* be added to the GitHub repository, so mutations can be tracked and documented properly.
+It is important to note that even code that cannot be ran/tested locally because of hardware requirements or is not even human-readable without interpreter software should *still* be added to the GitHub repository, so mutations can be tracked and documented properly.
 
 Whenever possible, such software should be stubbed as a hardware-independent program. More on that [here](#testing).
 
@@ -41,7 +41,7 @@ Mandatory things to document per protocol:
 - - (possibly) Security related configurations (API key, CSRF token, CORS policy etc)
 - (list may be expanded in the future)
 
-If any custom configuration was done for an endpoint, be it authorization, flow control, error feedback, whatever, it needs to be documented.
+If any custom configuration was done for an endpoint, be it authorization, flow control, error feedback, or whatever, it needs to be documented.
 
 ## Commits
 
@@ -53,7 +53,7 @@ You should try to keep your commit history as clear as possible, especially if y
 
 ## Branches
 
-This project uses branches to keep seperate spheres of development seperate. There are a few predefined first level branches (though you can make custom ones too, preferably after consultation). Prefix branches with these types. If you this branch belongs to a team, add the team's name to the branch name. If it belongs to an individual contributor, add your name to it.
+This project uses branches to keep separate spheres of development separate. There are a few predefined first level branches (though you can make custom ones too, preferably after consultation). Prefix branches with these types. If you this branch belongs to a team, add the team's name to the branch name. If it belongs to an individual contributor, add your name to it.
 
 ### Experimental
 
@@ -75,7 +75,7 @@ Branches where only documentation will be added and nothing else. This could be 
 
 Files that should always be omitted:
 - Sensitive information (credentials should *never* be under version control)
-- Build artifacts
+- Build artefacts
 - Temporary files
 - Dependencies that are hosted publicly (Maven, npm, pip, etc)
 - User-specific files (IDE preferences and OS files for instance)
